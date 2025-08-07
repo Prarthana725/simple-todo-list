@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Advanced To-Do List</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>To-Do List</h1>
+      <p>Stay organized, get things done</p>
+      <button id="darkToggle">🌙</button>
+    </header>
+
+    <div class="task-form">
+      <input type="text" id="taskInput" placeholder="What do you need to do?" />
+
+      <div class="category-options">
+        <span class="cat" data-value="Work">💼 Work</span>
+        <span class="cat" data-value="Personal">🏠 Personal</span>
+        <span class="cat" data-value="Shopping">🛍 Shopping</span>
+        <span class="cat" data-value="Health">🧘‍♀️ Health</span>
+        <span class="cat" data-value="Learning">📘 Learning</span>
+      </div>
+
+      <input type="datetime-local" id="dueDate" />
+      <textarea id="notes" placeholder="Add notes (optional)"></textarea>
+      <button id="addTask">➕ Add Task</button>
+    </div>
+
+    <ul id="taskList" class="task-list empty">
+      <div class="empty-state">
+        <img src="https://cdn-icons-png.flaticon.com/512/4205/4205785.png" alt="empty" width="60"/>
+        <p>No tasks yet. Add one above to get started!</p>
+      </div>
+    </ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
